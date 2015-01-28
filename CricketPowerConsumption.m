@@ -1,4 +1,4 @@
-Vdd  5;
+vdd = 5;
 batAmpHr = 0.250; % amp*hr
 onTime = 6; % hours
 
@@ -14,5 +14,7 @@ LEDcurDraw = onRatio*LEDcurrent/onTime; % amp/hr
 
 cktCurDraw = cktCurrent/onTime;
 
-batCurDraw = batAmpHr/onTime; % amp/hr
+totalCurDraw = cktCurDraw + LEDcurDraw
+
+batCurDraw = batAmpHr/onTime % amp/hr
 
